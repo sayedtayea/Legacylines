@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حول - Legacy Lines</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            direction: rtl;
+            text-align: right;
+            overflow-x: hidden; /* لضمان أن التمرير لا يتوقف */
+        }
+
+        /* تأثير الظهور عند تحميل الصفحة */
+        .fadeInUp {
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        /* التأثير عند تحميل الصفحة */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* يبدأ من الأسفل */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* يعود للمكان الطبيعي */
+            }
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            transition: transform 0.3s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #007bff;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            font-size: 1.2rem;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .comments {
+            margin-top: 40px;
+        }
+
+        .comment {
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment p {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 0;
+        }
+
+        .comment span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="fadeInUp">
+        <a href="2.HTML">
+            <img src="1.PNG" alt="شعار Legacy Lines">
+        </a>
+        <div>
+            <h1>Legacy Lines</h1>
+            <p>نكتب مستقبلاً مشرقاً</p>
+        </div>
+    </header>
+
+    <div class="container fadeInUp">
+        <h2>حول شركة Legacy Lines</h2>
+        <p>تأسست شركة Legacy Lines في عام 2016 على يد المؤسس سيد طايع، مع رؤية واضحة لتقديم خدمات كتابة السير الذاتية بأعلى معايير الاحترافية. ومنذ بداياتها، تهدف الشركة إلى مساعدة الأفراد في التعبير عن قدراتهم المهنية بشكل مميز ومؤثر، مما يسهم في فتح أبواب الفرص الوظيفية أمامهم.</p>
+        <p>نحن في Legacy Lines نعلم أن السيرة الذاتية هي أول خطوة نحو تحقيق الطموحات المهنية، لذلك نضع في اعتبارنا كل التفاصيل الدقيقة لضمان أن تكون سيرتك الذاتية أفضل ما يعكس مهاراتك وإنجازاتك. فريقنا مكون من خبراء متخصصين في كتابة السير الذاتية وفقًا لأحدث المعايير والمتطلبات العالمية، لنقدم لك مستندًا يعكس قدرتك التنافسية في سوق العمل.</p>
+        <p>نحن نقدم مجموعة من الخدمات المخصصة لتلبية احتياجات كل عميل، سواء كنت مبتدئًا في سوق العمل أو محترفًا تسعى للتقدم في مسيرتك المهنية. تتنوع خدماتنا بين السير الذاتية التقليدية، المخصصة، الإبداعية، والوظيفية، مما يوفر لك الخيارات التي تناسبك بشكل مثالي.</p>
+        <p>يعد فريق Legacy Lines خبراء في الكتابة، فهم يسعون دائمًا للتطوير المستمر ليظلوا على اطلاع بكل ما هو جديد في سوق العمل ومتطلبات التوظيف. نحن هنا للمساعدة في جعل سيرتك الذاتية أكثر جاذبية ومؤثرة للمسؤولين عن التوظيف.</p>
+
+        <div class="comments fadeInUp">
+            <h2>تعليقات العملاء</h2>
+
+            <div class="comment">
+                <p><span>أحمد مراد</span>: "خدمة ممتازة جدًا! السير الذاتية اللي كتبوهالي كانت احترافية جدًا، ولما قدمت بيها في شركات كبيرة، جالي اتصال بعد يومين من التقديم. شكرًا لكم!"</p>
+            </div>
+
+            <div class="comment">
+                <p><span>فاطمة علي</span>: "كنت محتارة أكتب سيرتي الذاتية إزاي، لكن بعد ما تعاملت مع Legacy Lines، اكتشفت فرق كبير. عجبني جدًا الاهتمام بالتفاصيل وجودة الكتابة. شكراً ليكم!"</p>
+            </div>
+
+            <div class="comment">
+                <p><span>محمد سامي</span>: "شركة محترمة، فريق عمل متعاون جدًا. مش بس كتبوا لي سيرة ذاتية رائعة، لكنهم كمان قدموا لي نصائح تساعدني في تحسين فرصي في سوق العمل. أنصح أي حد يتعامل معهم."</p>
+            </div>
+
+        </div>
+
+        <div class="contact">
+            <h2>تواصل معنا</h2>
+            <p>الهاتف والواتساب: <a href="tel:01025242334">01025242334</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

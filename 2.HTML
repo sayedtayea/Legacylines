@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Lines - خدمات كتابة السيرة الذاتية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            direction: rtl;
+            text-align: right;
+            overflow: hidden; /* لمنع التمرير غير المرغوب فيه أثناء الانتقال */
+            transition: background-color 0.3s ease; /* تأثير تدرج في الخلفية عند الانتقال */
+        }
+
+        /* تأثير الظهور من الأسفل */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s forwards;
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer; /* لتوضيح أن الصورة قابلة للضغط */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            transition: transform 0.3s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeUp 1s forwards; /* إضافة تأثير الظهور من الأسفل للمحتوى */
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #007bff;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.2rem;
+            background-color: #f1f1f1;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        li span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            font-size: 1.2rem;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .about-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeUp 1s forwards; /* إضافة تأثير الظهور من الأسفل لهذه المنطقة */
+        }
+
+        .about-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section a {
+            font-size: 1.2rem;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-section a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body class="fade">
+    <header>
+        <!-- إضافة الرابط حول الصورة لتوجيه المستخدم إلى 2.html -->
+        <a href="2.html">
+            <img src="1.PNG" alt="شعار Legacy Lines">
+        </a>
+        <div>
+            <h1>Legacy Lines</h1>
+            <p>نكتب مستقبلاً مشرقاً</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>خدماتنا</h2>
+        <ul>
+            <li>
+                السير الذاتية التقليدية <span>299 جنيه</span>
+            </li>
+            <li>
+                السير الذاتية المخصصة <span>399 جنيه</span>
+            </li>
+            <li>
+                السير الذاتية الإبداعية <span>699 جنيه</span>
+            </li>
+            <li>
+                السير الذاتية الوظيفية <span>399 جنيه</span>
+            </li>
+            <li>
+                السير الذاتية المختلطة <span>499 جنيه</span>
+            </li>
+        </ul>
+
+        <div class="contact">
+            <h2>تواصل معنا</h2>
+            <p>الهاتف والواتساب: <a href="tel:01025242334">01025242334</a></p>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <a href="ABOUT.HTML">حول الشركة</a>
+    </div>
+</body>
+</html>
